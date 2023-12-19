@@ -1,0 +1,6 @@
+replicaCount: 2
+appName: todoappui
+image:
+  name: devopsinsiders/todoapp-ui-new
+  tag: v2
+  port: 80

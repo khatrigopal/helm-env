@@ -1,0 +1,15 @@
+agar hmare organization me differenent-2 env hai to hum helm ko use krte hai..
+hum template bnate hai jise alag alag evn me use krenge
+K8s manifest file problem hai
+terraform & application ka code alag-alag repo me hota hai because terraform wala code infra wale manager krte ahi but application ke liye developer ke sath kam krna hota hai.
+helm install tab chalte hai jab hum sari testing kar lete hai
+helm template use krte hai testing ke liye
+#helm create chart
+#helm template chart (koi bhi name) ./chart
+# helm lint bhi hum use kr skte hai (helm template ki jagah) -- ye terraform validate ke equal hai
+terraform me main.tf is equal to helm is template
+var.tf values.tf
+terraform.tfvars to dev.yaml & prod.yaml (like env wise), nhi to ye default values.yaml lega
+ab hamari requirement hai ki dev me 1 replica chaiye and prod me 3 replica chahiye
+#helm template todo .\chart\ --values .\env\prod.yaml -- isme jis files se value pas krvani hai usko --values se pas krvatge hai
+
